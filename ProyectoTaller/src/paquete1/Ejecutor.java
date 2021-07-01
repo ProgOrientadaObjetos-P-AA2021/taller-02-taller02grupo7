@@ -30,6 +30,7 @@ public class Ejecutor {
         pasajes.add(pN);
         pasajes.add(pU);
         pasajes.add(PE3);
+        
         for (int i = 0; i < pasajes.size(); i++) {
             
             // establecer el valor del atributo registro
