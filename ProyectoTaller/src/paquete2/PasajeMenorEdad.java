@@ -29,7 +29,7 @@ public class PasajeMenorEdad extends PasajeInterCantonal
     }
     
  @Override
-    public void setPasajeIntercantonal() {
+    public void setPasajeInterCantonal() {
 
         valorPasaje = (numeroKilometros * 0.10)
                 + (tarifaBase + (tarifaBase * (descuento / 100)));

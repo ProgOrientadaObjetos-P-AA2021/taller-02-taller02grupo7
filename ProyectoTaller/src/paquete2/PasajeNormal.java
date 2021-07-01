@@ -29,7 +29,7 @@ public class PasajeNormal extends PasajeInterCantonal
     }
 
     @Override
-    public void setPasajeIntercantonal() {
+    public void setPasajeInterCantonal() {
 
         valorPasaje = (numeroKilometros * 0.15)
                 + (tarifaBase + (tarifaBase * (adicional / 100)));

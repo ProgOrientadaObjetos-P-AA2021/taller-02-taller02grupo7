@@ -28,7 +28,7 @@ public class PasajeUniversitario extends PasajeInterCantonal {
     }
 
     @Override
-    public void setPasajeIntercantonal() {
+    public void setPasajeInterCantonal() {
 
         valorPasaje = ((tarifaBase / 2));
     }
