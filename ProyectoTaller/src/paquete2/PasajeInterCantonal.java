@@ -12,12 +12,21 @@ import java.io.Serializable;
  * @author reroes
  */
 public abstract class PasajeInterCantonal implements Serializable{
-    private
+    private String nombreCliente;
+    private String cedula;
+    private String origen;
+    private String destino;
+    private double numeroKilometros;
+    private double tarifaBase;
+    public double valorPasaje;
     public PasajeInterCantonal(String nom, String ced, String origen,String
             destino, double numKil, double tarifa, double pasaje){
         
         
     }
+    public abstract getValorPasaje();
+    
+    
     
     
     @Override
