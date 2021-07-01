@@ -18,6 +18,7 @@ public class Ejecutor {
         ArrayList<PasajeInterCantonal> pasajes = new ArrayList<>();       
         
         EscrituraArchivoSecuencial archivo = new EscrituraArchivoSecuencial(nombreArchivo);
+        
         PasajeMenorEdad pME = new PasajeMenorEdad("Juan", "150068", "Estacion 1",
                 "Estacion 2", 1585, 5, 2);
         PasajeNormal pN = new PasajeNormal("Juan", "150068", "Estacion 4",

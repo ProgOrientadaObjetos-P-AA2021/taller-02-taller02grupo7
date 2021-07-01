@@ -86,7 +86,6 @@ public abstract class PasajeInterCantonal implements Serializable {
     public double getPasajeIntercantonal() {
         return valorPasaje;
     }
-
     @Override
     public String toString() {
         return String.format("El pasajero: %s\tCi:%s\nOrigen: %s\nDestino: %s\n"
