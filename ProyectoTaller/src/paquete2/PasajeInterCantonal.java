@@ -24,17 +24,60 @@ public abstract class PasajeInterCantonal implements Serializable{
         nombreCliente= nom;
         cedula= ced;
         origen=orig;
-        
+        destino=dest;
+        numeroKilometros=numKil;
+        tarifaBase=tarifa;
     }
-    public abstract void PasajeInterCantonal();
-    
-    
-    
-    
+    public void setNombreCliente(String n){
+        nombreCliente=n;
+    }
+    public String getNombreCliente(){
+    return nombreCliente;
+    }
+    public void setCed(String n){
+        cedula=n;
+    }
+    public String getCed(){
+        return cedula;
+    }
+    public void setOrigen(String n){
+        origen=n;
+    }
+    public String getOrigen(){
+        return origen;
+    }
+    public void setDestino(String n){
+        destino=n;
+    }
+    public String getDestino(){
+        return destino;
+    }
+    public void setNumeroKilometros(double n){
+        numeroKilometros=n;
+    }
+    public double getNumeroKilometros(){
+        return numeroKilometros;
+    }
+    public void setValorTarifaBase(double n){
+        tarifaBase=n;
+    }
+    public double getValorTarifaBase(){
+        return tarifaBase;
+    }
+    public abstract void setPasajeInterCantonal();
+    public double getPasajeIntercantonal(){
+        return valorPasaje;
+    }
+
     @Override
-    public String toString(){
-        return String.format("Pasaje.");
+    public String toString() {
+        return String.format("El pasajero: %s%tCi:%s\nOrigen: %s\nDestino: %s\n"
+                + "Numero de kilometros recorridos: %s\nValor tarifa base:"
+                + "%s\nTotal a pagar: %s", getNombreCliente(),getCed(),
+                getOrigen(),getDestino(), getNumeroKilometros(),
+                getValorTarifaBase(),getPasajeIntercantonal());
     }
+    
     
     
 }
