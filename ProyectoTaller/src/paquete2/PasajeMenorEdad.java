@@ -11,9 +11,43 @@ import java.io.Serializable;
  *
  * @author reroes
  */
-public class PasajeMenorEdad extends PasajeInterCantonal 
-        implements Serializable{
-    
-    
-    
+public class PasajeMenorEdad extends PasajeInterCantonal
+        implements Serializable {
+
+    private double descuento;
+
+    public PasajeMenorEdad(String nom, String ce, String or, String de,
+            double num, double ta, double pa, double d) {
+        super(nom, ce, or, de, num, ta, pa);
+
+        descuento = d;
+
+    }
+
+    public void establecerAdicional(double x) {
+        descuento = x;
+    }
+
+    @Override
+    public void setValorPasaje() {
+
+        valorPasaje = (numeroKilometros * 0.10)
+                + (tarifaBase + (tarifaBase * (descuento / 100)));
+    }
+
+    public double obtenerDescuento() {
+        return descuento;
+    }
+
+    @Override
+    public String toString() {
+        String cadena = String.format("%s\n"
+                + "Porcentaje Adicional:% .2f\n"
+                + "Descuento: %.2f\n",
+                 super.toString(),
+                obtenerDescuento(), getValorPasaje());
+
+        return cadena;
+    }
+
 }
