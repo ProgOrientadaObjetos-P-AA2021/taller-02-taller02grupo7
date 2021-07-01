@@ -28,7 +28,7 @@ public class PasajeUniversitario extends PasajeInterCantonal {
     }
 
     @Override
-    public void setValorPasaje() {
+    public void setPasajeIntercantonal() {
 
         valorPasaje = ((tarifaBase / 2));
     }
@@ -40,10 +40,10 @@ public class PasajeUniversitario extends PasajeInterCantonal {
     @Override
     public String toString() {
         String cadena = String.format("%s\n"
-                + "Nombre de la Universidad:% .2f\n"
+                + "Nombre de la Universidad:%s\n"
                 + "Descuento: %.2f\n",
                  super.toString(),
-                obtenerUniversidad(), getValorPasaje());
+                obtenerUniversidad(), getPasajeIntercantonal());
 
         return cadena;
     }

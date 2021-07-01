@@ -27,9 +27,9 @@ public class PasajeMenorEdad extends PasajeInterCantonal
     public void establecerAdicional(double x) {
         descuento = x;
     }
-
-    @Override
-    public void setValorPasaje() {
+    
+ @Override
+    public void setPasajeIntercantonal() {
 
         valorPasaje = (numeroKilometros * 0.10)
                 + (tarifaBase + (tarifaBase * (descuento / 100)));
@@ -45,7 +45,7 @@ public class PasajeMenorEdad extends PasajeInterCantonal
                 + "Porcentaje Adicional:% .2f\n"
                 + "Descuento: %.2f\n",
                  super.toString(),
-                obtenerDescuento(), getValorPasaje());
+                obtenerDescuento(), getPasajeIntercantonal());
 
         return cadena;
     }

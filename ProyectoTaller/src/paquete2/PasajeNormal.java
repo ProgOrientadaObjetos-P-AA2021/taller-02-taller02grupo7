@@ -29,7 +29,7 @@ public class PasajeNormal extends PasajeInterCantonal
     }
 
     @Override
-    public void setValorPasaje() {
+    public void setPasajeIntercantonal() {
 
         valorPasaje = (numeroKilometros * 0.15)
                 + (tarifaBase + (tarifaBase * (adicional / 100)));
@@ -45,7 +45,7 @@ public class PasajeNormal extends PasajeInterCantonal
                 + "Porcentaje Adicional:% .2f\n"
                 + "Valor Del Pasaje: %.2f\n",
                  super.toString(),
-                obtenerAdicional(), getValorPasaje());
+                obtenerAdicional(), getPasajeIntercantonal());
 
         return cadena;
     }

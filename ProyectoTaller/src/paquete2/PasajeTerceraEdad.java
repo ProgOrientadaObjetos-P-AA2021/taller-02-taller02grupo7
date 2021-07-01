@@ -20,7 +20,7 @@ public class PasajeTerceraEdad extends PasajeInterCantonal {
     }
 
     @Override
-    public void setValorPasaje() {
+    public void setPasajeIntercantonal() {
 
         valorPasaje = (numeroKilometros * 0.5)
                 + ((tarifaBase / 2));
@@ -30,7 +30,7 @@ public class PasajeTerceraEdad extends PasajeInterCantonal {
     public String toString() {
         String cadena = String.format("%s\n"
                 + "Valor Del Pasaje: %.2f\n",
-                 super.toString(), getValorPasaje());
+                 super.toString(), getPasajeIntercantonal());
 
         return cadena;
     }
