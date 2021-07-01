@@ -32,7 +32,7 @@ public class Ejecutor {
         pasajes.add(PE3);
         
         for (int i = 0; i < pasajes.size(); i++) {
-            
+            pasajes.get(i).setPasajeInterCantonal();
             // establecer el valor del atributo registro
             archivo.establecerRegistro(pasajes.get(i));
             // establecer en el archivo el atributo del registro
