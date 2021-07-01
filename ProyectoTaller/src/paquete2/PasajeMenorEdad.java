@@ -17,8 +17,8 @@ public class PasajeMenorEdad extends PasajeInterCantonal
     private double descuento;
 
     public PasajeMenorEdad(String nom, String ce, String or, String de,
-            double num, double ta, double pa, double d) {
-        super(nom, ce, or, de, num, ta, pa);
+            double num, double ta, double d) {
+        super(nom, ce, or, de, num, ta);
 
         descuento = d;
 

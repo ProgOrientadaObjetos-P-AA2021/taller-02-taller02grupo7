@@ -23,7 +23,7 @@ public abstract class PasajeInterCantonal implements Serializable {
 
 
     public PasajeInterCantonal(String nom, String ced, String orig, String dest,
-            double numKil, double tarifa, double pasaje) {
+            double numKil, double tarifa) {
         nombreCliente = nom;
         cedula = ced;
         origen = orig;

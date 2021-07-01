@@ -16,8 +16,8 @@ public class PasajeUniversitario extends PasajeInterCantonal {
     private String uni;
 
     public PasajeUniversitario(String nom, String ce, String or, String de,
-            double num, double ta, double pa, String u) {
-        super(nom, ce, or, de, num, ta, pa);
+            double num, double ta, String u) {
+        super(nom, ce, or, de, num, ta);
 
         uni = u;
 

@@ -14,8 +14,8 @@ import java.io.Serializable;
 public class PasajeTerceraEdad extends PasajeInterCantonal {
 
     public PasajeTerceraEdad(String nom, String ce, String or, String de,
-            double num, double ta, double pa, double adi) {
-        super(nom, ce, or, de, num, ta, pa);
+            double num, double ta) {
+        super(nom, ce, or, de, num, ta);
 
     }
 
